@@ -97,15 +97,15 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">🎬 Movie Tickets Booking</a>
+            <a class="navbar-brand" href="/movie-tickets-booking">🎬 Movie Tickets Booking</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/movies">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/bookings">My Bookings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/movie-tickets-booking">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/movie-tickets-booking/movies">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/movie-tickets-booking/bookings">My Bookings</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
                 </ul>
             </div>
@@ -174,13 +174,13 @@
     <script>
         function selectMovie(movieId) {
             localStorage.setItem('selectedMovieId', movieId);
-            window.location.href = '/seat-selection?movieId=' + movieId;
+            window.location.href = '/movie-tickets-booking/seat-selection?movieId=' + movieId;
         }
         
         function searchMovies() {
             const keyword = document.getElementById('searchInput').value;
             if (keyword.trim()) {
-                window.location.href = '/movies?search=' + encodeURIComponent(keyword);
+                window.location.href = '/movie-tickets-booking/movies?search=' + encodeURIComponent(keyword);
             }
         }
     </script>
