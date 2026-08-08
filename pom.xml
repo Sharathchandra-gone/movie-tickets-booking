@@ -8,7 +8,7 @@
     <groupId>com.movietickets</groupId>
     <artifactId>movie-tickets-booking</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>Movie Tickets Booking System</name>
     <description>A user-friendly Java application for booking movie tickets</description>
